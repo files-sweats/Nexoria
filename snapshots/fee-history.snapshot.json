@@ -1,0 +1,12 @@
+{
+  "network": "base-sepolia",
+  "chainId": 84532,
+  "explorer": "https://sepolia.basescan.org",
+  "capturedAt": "1970-01-01T00:00:00.000Z",
+  "note": "Placeholder snapshot. Populate this file by copying feeHistory from reports/latest.json after a sepolia run.",
+  "feeHistory": {
+    "oldestBlock": "0",
+    "baseFeePerGasWei": [],
+    "rewardWei": []
+  }
+}
