@@ -1,0 +1,7 @@
+{
+  "network": "base-mainnet",
+  "chainId": 8453,
+  "rpcUrl": "https://mainnet.base.org",
+  "explorer": "https://basescan.org",
+  "notes": "Primary target for production reads. No deployment section is included in this repo."
+}
