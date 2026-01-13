@@ -1,0 +1,33 @@
+{
+  "name": "nexoria",
+  "version": "0.1.0",
+  "private": true,
+  "license": "BSD-3-Clause",
+  "type": "module",
+  "scripts": {
+    "inspect:mainnet": "node app/Nexoria.mjs --network mainnet",
+    "inspect:sepolia": "node app/Nexoria.mjs --network sepolia",
+    "export:report": "node scripts/export-report.mjs",
+    "lint": "eslint .",
+    "clean": "rimraf node_modules dist .cache"
+  },
+  "dependencies": {
+    "@coinbase/wallet-sdk": "^4.3.4",
+    "@coinbase/onchainkit": "^1.1.2",
+    "@coinbase/cdp-sdk": "^1.40.1",
+    "@coinbase/agentkit": "^0.10.3",
+    "@coinbase/coinbase-sdk": "^1.0.0",
+    "@coinbase/cdp-core": "^0.0.1",
+    "@base-org/account": "^2.5.1",
+    "@base-org/account-ui": "^1.0.1",
+    "@base-org/build-onchain-apps": "^0.0.0",
+    "viem": "^2.21.0",
+    "ethers": "^6.13.4",
+    "web3": "^4.12.1",
+    "axios": "^1.7.9"
+  },
+  "devDependencies": {
+    "eslint": "^9.9.0",
+    "rimraf": "^6.0.1"
+  }
+}
