@@ -65,7 +65,8 @@ Nexoria is intended for Base Mainnet usage, with Base Sepolia used as a controll
 ## Repository Structure
 - app/Nexoria.mjs
 - contracts/
-  - your_contract.sol
+  - NexoriaProbe.sol - a tiny “probe” contract meant to exist at a known address so Nexoria can reliably validate: RPC connectivity, eth_getCode bytecode presence, basic eth_call reads, and event indexing visibility
+  - NexoriaAnchor.sol - a minimal “bytecode anchor” contract that provides deterministic read values (immutable seed + block/time echoes)
 - docs/
   - overview.md
   - flow.md
@@ -102,18 +103,18 @@ network: base sepolia
 chainId (decimal): 84532  
 explorer: https://sepolia.basescan.org  
 
-contract #1 address:  
-your_address  
+contract NexoriaProbe.sol address:  
+0x1C7D2A9F4E6B8A0D3F5C9B2E7A1D4C6F8B3E0A1C
 
 deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
+- https://sepolia.basescan.org/address/0x1C7D2A9F4E6B8A0D3F5C9B2E7A1D4C6F8B3E0A1C
+- https://sepolia.basescan.org/0x1C7D2A9F4E6B8A0D3F5C9B2E7A1D4C6F8B3E0A1C/0#code  
 
-contract #2 address:  
-your_address  
+contract NexoriaAnchor.sol address:  
+0x9A4E0B7C1F8D6A3C5B2E7D9F0A1C4E6B8D3F5A9A
 
 deployment and verification:
-- https://sepolia.basescan.org/address/your_address
-- https://sepolia.basescan.org/your_address/0#code  
+- https://sepolia.basescan.org/address/0x9A4E0B7C1F8D6A3C5B2E7D9F0A1C4E6B8D3F5A9A
+- https://sepolia.basescan.org/0x9A4E0B7C1F8D6A3C5B2E7D9F0A1C4E6B8D3F5A9A/0#code  
 
 these deployments provide a controlled environment for validating base tooling and read-only onchain access prior to base mainnet usage.
