@@ -1,0 +1,39 @@
+{
+  "meta": {
+    "generatedAt": "1970-01-01T00:00:00.000Z",
+    "repository": "Nexoria",
+    "builtFor": "Base",
+    "network": "mainnet",
+    "chainId": 8453,
+    "explorer": "https://basescan.org",
+    "rpcUrl": "https://mainnet.base.org",
+    "targetsFile": "samples/targets.json",
+    "reportFile": "reports/latest.json",
+    "readOnly": true
+  },
+  "wallet": {
+    "connected": false,
+    "addresses": [],
+    "error": "placeholder"
+  },
+  "balances": [],
+  "chainSignals": {
+    "latestBlock": "0",
+    "blockTimestamp": "0",
+    "gasPriceWei": "0",
+    "gasPriceGwei": "0.000 gwei",
+    "baseFeeWei": null,
+    "baseFeeGwei": null,
+    "feeHistory": {
+      "oldestBlock": "0",
+      "baseFeePerGasWei": [],
+      "rewardWei": []
+    },
+    "basescan": {
+      "block": "https://basescan.org/block/0",
+      "gasTracker": "https://basescan.org/gastracker",
+      "blocks": "https://basescan.org/blocks"
+    }
+  },
+  "bytecode": []
+}
